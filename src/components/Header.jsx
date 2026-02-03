@@ -32,9 +32,9 @@ export default function Header() {
 
         {/* Logo */}
         <div className="flex items-center">
-  <Link to="/" className="flex items-center">
+  <Link to="/" className="flex items-center justify-start">
   <img
-    src="/images/techengg-logo.png"
+    src="/images/technewlogo.png"
     alt="Technical Engineers Logo"
     className="h-14 md:h-20 w-auto"
   />

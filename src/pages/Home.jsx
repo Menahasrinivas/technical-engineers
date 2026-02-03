@@ -25,7 +25,7 @@ export default function Home() {
           </h1>
 
           <h2
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-delay="200"
             className="text-lg md:text-2xl italic font-light"
           >
@@ -54,7 +54,7 @@ export default function Home() {
         </div>
 
         {/* Image */}
-        <div data-aos="fade-left">
+        <div data-aos="fade-up">
           <img
             src="/images/introimg.webp"
             alt="HVAC Engineering"

@@ -28,14 +28,15 @@ export default function Header() {
         scrolled ? "shadow-md" : "shadow-sm"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="w-full px-4 md:px-8 py-4 flex items-center justify-between">
+
         {/* Logo */}
-        <div className="flex items-center gap-2">
-  <Link to="/" className="flex items-center -ml-2">
+        <div className="flex items-center">
+  <Link to="/" className="flex items-center">
   <img
     src="/images/techengg-logo.png"
     alt="Technical Engineers Logo"
-    className="h-20 md:h-24 w-auto"
+    className="h-14 md:h-20 w-auto"
   />
 </Link>
 </div>
@@ -60,34 +61,34 @@ export default function Header() {
           </NavLink>
         </nav>
 
-        {/* Mobile Hamburger */}
-        <button
-          className="md:hidden text-gray-700 focus:outline-none"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            {menuOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            )}
-          </svg>
-        </button>
+       <button
+  className="md:hidden text-gray-700 focus:outline-none ml-auto"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  <svg
+    className="w-6 h-6"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    {menuOpen ? (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M6 18L18 6M6 6l12 12"
+      />
+    ) : (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M4 6h16M4 12h16M4 18h16"
+      />
+    )}
+  </svg>
+</button>
+
       </div>
 
       {/* Mobile Menu */}

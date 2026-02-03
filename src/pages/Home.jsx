@@ -18,14 +18,14 @@ export default function Home() {
         {/* Centered Content */}
         <div className="relative text-center text-white max-w-4xl px-4">
           <h1
-            data-aos="fade-up"
+            data-aos="fade-right"
             className="text-3xl md:text-5xl font-bold mb-4"
           >
             HVAC & MEP Engineering Experts in Chennai, Tamil Nadu
           </h1>
 
           <h2
-            data-aos="fade-up"
+            data-aos="fade-left"
             data-aos-delay="200"
             className="text-lg md:text-2xl italic font-light"
           >

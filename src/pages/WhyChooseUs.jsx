@@ -171,7 +171,7 @@ export default function WhyChooseUs() {
       </section>
 
       {/* ================= COMMITMENT ================= */}
-      <section className="bg-teal-800 text-white py-16">
+      <section className="bg-slate-50 text-gray-800 py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <p
             data-aos="fade-up"

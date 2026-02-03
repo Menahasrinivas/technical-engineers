@@ -33,9 +33,9 @@ export default function Header() {
         <div className="flex items-center gap-2">
   <Link to="/" className="flex items-center -ml-2">
   <img
-    src="/images/newlogo.png"
+    src="/images/techengg-logo.png"
     alt="Technical Engineers Logo"
-    className="h-20 md:h-18 w-auto"
+    className="h-20 md:h-24 w-auto"
   />
 </Link>
 </div>

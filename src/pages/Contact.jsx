@@ -84,11 +84,47 @@ export default function Contact() {
           <h3 className="font-semibold text-gray-800">📞 Call Us</h3>
           <p>97907 04878 | 90420 90053</p>
         </div>
+<div>
+  <h3 className="font-semibold text-gray-800 flex items-center gap-2">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 512 512"
+      className="w-6 h-6"
+    >
+      {/* Green Circle */}
+      <circle cx="256" cy="256" r="256" fill="#25D366" />
 
-        <div>
-          <h3 className="font-semibold text-gray-800">💬 WhatsApp Us</h3>
-          <p>Quick queries, site visits & service booking</p>
-        </div>
+      {/* White Chat Bubble */}
+      <path
+        fill="#ffffff"
+        d="M256 96c-88.4 0-160 64.5-160 144 0 32.2 11.7 61.9 31.3 85.6L96 416l96.8-28.7c19.1 6.3 39.8 9.7 63.2 9.7 88.4 0 160-64.5 160-144S344.4 96 256 96z"
+      />
+
+      {/* Phone Icon */}
+      <path
+        fill="#25D366"
+        d="M304.3 289.7c-3.5-1.8-20.6-10.1-23.8-11.3-3.2-1.2-5.6-1.8-8 1.8-2.4 3.5-9.2 11.3-11.3 13.7-2.1 2.4-4.1 2.7-7.6.9-20.6-10.3-34-18.5-47.6-42.2-3.6-6.2 3.6-5.8 10.3-19.3 1.2-2.4.6-4.5-.3-6.3-.9-1.8-8-19.3-11-26.4-2.9-7-5.9-6-8-6.1-2.1-.1-4.5-.1-6.9-.1s-6.3.9-9.6 4.5c-3.2 3.5-12.7 12.4-12.7 30.2s13 35 14.8 37.4c1.8 2.4 25.6 39 62 54.6 8.6 3.7 15.3 5.9 20.5 7.5 8.6 2.7 16.4 2.3 22.6 1.4 6.9-1 20.6-8.4 23.5-16.6 2.9-8.1 2.9-15.1 2.1-16.6-.9-1.5-3.2-2.4-6.7-4.2z"
+      />
+      </svg>
+
+       WhatsApp Us
+      </h3>
+       <p>97907 04878 | 90420 90053</p>
+       </div>
+<div>
+   <p className="font-semibold text-lg">
+  📧 Email:<br />
+  For enquiries, consultations, and service requests{" "}
+  <a
+    href="mailto:technicalengineersmd@gmail.com"
+    className="underline hover:text-black"
+  >
+    technicalengineersmd@gmail.com
+  </a>
+</p>
+
+</div>
+
       </div>
     </div>
 
@@ -212,6 +248,18 @@ export default function Contact() {
           <p className="font-semibold text-lg">
             📞 97907 04878 | 90420 90053
           </p>
+  <p className="font-semibold text-lg">
+  📧 Email:<br />
+  For enquiries, consultations, and service requests{" "}
+  <a
+    href="mailto:technicalengineersmd@gmail.com"
+    className="underline hover:text-white"
+  >
+    technicalengineersmd@gmail.com
+  </a>
+</p>
+
+
         </div>
       </section>
 

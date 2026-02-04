@@ -28,13 +28,13 @@ export default function Header() {
         scrolled ? "shadow-md" : "shadow-sm"
       }`}
     >
-      <div className="w-full px-4 md:px-8 py-4 flex items-center justify-between">
+      <div className="w-full px-4 md:px-8 py-2 flex items-center justify-between">
 
         {/* Logo */}
         <div className="flex items-center">
   <Link to="/" className="flex items-center justify-start">
   <img
-    src="/images/technewlogo.png"
+    src="/logo/techlogo.png"
     alt="Technical Engineers Logo"
     className="h-14 md:h-20 w-auto"
   />

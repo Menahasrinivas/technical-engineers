@@ -66,16 +66,18 @@ export default function About() {
       <section className="bg-slate-50 py-16">
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
           {/* Image */}
-          <div data-aos="fade-right">
+          <div data-aos="fade-right"
+            className="order-2 md:order-1">
             <img
               src="/images/ceo.webp"
               alt="Founder - Sekar T"
-              className="w-full h-[220px] md:h-[360px] lg:h-[420px] object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+              className="w-full h-[220px] md:h-[360px] lg:h-[420px] object-cover  object-top rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
             />
           </div>
 
           {/* Text */}
-          <div data-aos="fade-left">
+          <div data-aos="fade-left"
+          className="order-1 md:order-2">
             <h2 className="text-2xl md:text-3xl font-bold mb-5">
               Our Founder’s Story
             </h2>
@@ -138,7 +140,8 @@ export default function About() {
   <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
 
     {/* IMAGE */}
-    <div data-aos="fade-right">
+    <div data-aos="fade-right"
+     className="order-2 md:order-1">
       <img
         src="/images/what-we-do.webp"
         alt="HVAC & MEP Services"
@@ -147,7 +150,8 @@ export default function About() {
     </div>
 
     {/* TEXT */}
-    <div data-aos="fade-left">
+    <div data-aos="fade-left"
+     className="order-1 md:order-2">
       <h2 className="text-2xl md:text-3xl font-bold mb-5">
         What We Do
       </h2>

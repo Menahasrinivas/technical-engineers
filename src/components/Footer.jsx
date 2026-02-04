@@ -34,11 +34,24 @@ export default function Footer() {
             97907 04878 | 90420 90053
           </p>
 
-          <p className="text-sm text-teal-100">
-            <strong>💬 WhatsApp:</strong><br />
-            Quick queries, site visits & service booking
+          <p className="text-sm text-teal-100 mb-2">
+            <strong>WhatsApp Us:</strong><br />
+            97907 04878 | 90420 90053
           </p>
-        </div>
+    <p className="text-sm text-teal-100">
+       <strong>📧 Email:</strong><br />
+        For enquiries, consultations, and service requests{" "}
+        <a
+           href="mailto:technicalengineersmd@gmail.com"
+             className="underline hover:text-white"
+             >
+             technicalengineersmd@gmail.com
+              </a>
+                 </p>
+            </div>
+
+
+        
       </div>
 
       {/* ===== BOTTOM BAR ===== */}

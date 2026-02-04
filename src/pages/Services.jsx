@@ -31,7 +31,8 @@ export default function Services() {
       {/* ================= SERVICE 1 ================= */}
       <section className="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
         {/* Image */}
-        <div data-aos="fade-right">
+        <div data-aos="fade-right"
+         className="order-2 md:order-1">
           <img
             src="/images/serviceone.webp"
             alt="AC & HVAC Repair"
@@ -40,7 +41,8 @@ export default function Services() {
         </div>
 
         {/* Content */}
-        <div data-aos="fade-left">
+        <div data-aos="fade-left"
+         className="order-1 md:order-2">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             AC & HVAC Repair Services
           </h2>
@@ -122,7 +124,8 @@ export default function Services() {
       {/* ================= SERVICE 3 ================= */}
       <section className="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
         {/* Image */}
-        <div data-aos="fade-right">
+        <div data-aos="fade-right"
+         className="order-2 md:order-1">
           <img
             src="/images/serviceac.webp"
             alt="Emergency HVAC Services"
@@ -131,7 +134,8 @@ export default function Services() {
         </div>
 
         {/* Content */}
-        <div data-aos="fade-left">
+        <div data-aos="fade-left"
+         className="order-1 md:order-2">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Emergency AC & HVAC Services
           </h2>

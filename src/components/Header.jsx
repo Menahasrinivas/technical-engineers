@@ -15,12 +15,27 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const linkClass = ({ isActive }) =>
-    `block px-3 py-2 rounded-md transition ${
-      isActive
-        ? "text-teal-700 font-semibold"
-        : "text-gray-700 hover:text-teal-700"
-    }`;
+const desktopLinkClass = ({ isActive }) =>
+  `relative px-3 py-1.5 transition
+   ${isActive
+     ? "text-teal-700 font-semibold"
+     : "text-gray-700 hover:text-teal-700"}
+   after:content-[''] after:absolute after:left-0 after:-bottom-1
+   after:h-[2px] after:w-full after:bg-teal-700
+   after:scale-x-0 hover:after:scale-x-100
+   after:origin-left after:transition-transform after:duration-300`;
+
+const mobileLinkClass = ({ isActive }) =>
+  `relative block py-3 text-base transition
+   ${isActive ? "text-teal-700 font-semibold" : "text-gray-700"}
+   
+   after:content-[''] after:absolute after:left-0 after:-bottom-1
+   after:h-[2px] after:w-full after:bg-teal-700
+   after:scale-x-0
+   active:after:scale-x-100
+   focus-visible:after:scale-x-100
+   after:transition-transform after:duration-300`;
+
 
   return (
     <header
@@ -44,19 +59,19 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-6">
-          <NavLink to="/" className={linkClass}>
+          <NavLink to="/" className={desktopLinkClass}>
             Home
           </NavLink>
-          <NavLink to="/about" className={linkClass}>
+          <NavLink to="/about" className={desktopLinkClass}>
             About Us
           </NavLink>
-          <NavLink to="/services" className={linkClass}>
+          <NavLink to="/services" className={desktopLinkClass}>
             Services
           </NavLink>
-          <NavLink to="/why-choose-us" className={linkClass}>
+          <NavLink to="/why-choose-us" className={desktopLinkClass}>
             Why Choose Us
           </NavLink>
-          <NavLink to="/contact" className={linkClass}>
+          <NavLink to="/contact" className={desktopLinkClass}>
             Contact
           </NavLink>
         </nav>
@@ -91,32 +106,29 @@ export default function Header() {
 
       </div>
 
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden bg-white border-t">
-          <nav className="px-4 py-3 space-y-0">
-            <NavLink to="/" className={linkClass} onClick={() => setMenuOpen(false)}>
-              Home
-            </NavLink>
-            <NavLink to="/about" className={linkClass} onClick={() => setMenuOpen(false)}>
-              About Us
-            </NavLink>
-            <NavLink to="/services" className={linkClass} onClick={() => setMenuOpen(false)}>
-              Services
-            </NavLink>
-            <NavLink
-              to="/why-choose-us"
-              className={linkClass}
-              onClick={() => setMenuOpen(false)}
-            >
-              Why Choose Us
-            </NavLink>
-            <NavLink to="/contact" className={linkClass} onClick={() => setMenuOpen(false)}>
-              Contact
-            </NavLink>
-          </nav>
-        </div>
-      )}
+{menuOpen && (
+  <div className="md:hidden bg-white border-t">
+    <nav className="flex flex-col px-4">
+      <NavLink to="/" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>
+        Home
+      </NavLink>
+      <NavLink to="/about" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>
+        About Us
+      </NavLink>
+      <NavLink to="/services" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>
+        Services
+      </NavLink>
+      <NavLink to="/why-choose-us" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>
+        Why Choose Us
+      </NavLink>
+      <NavLink to="/contact" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>
+        Contact
+      </NavLink>
+    </nav>
+  </div>
+)}
+
+
     </header>
   );
 }

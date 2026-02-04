@@ -5,3 +5,17 @@
 /* body {
   @apply bg-slate-50 text-gray-700;
 } */
+@keyframes menuItem {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-menu-item {
+  animation: menuItem 0.35s ease forwards;
+}
